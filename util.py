@@ -1,8 +1,9 @@
+from config import get_API
 import openai
 
 #API_KEY = 'replace with your API-KEY'
 
-openai.api_key = API_KEY
+openai.api_key = get_API()
 
 #Function that generates the reply from the ChatGPT
 def chatGPTResponse(conversation):

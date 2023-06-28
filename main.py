@@ -1,6 +1,7 @@
 # importing the libraries
 import discord
 from discord import app_commands
+from config import get_bot_token
 from util import (
     getResponse,
     initializeConversation,
@@ -14,7 +15,7 @@ import asyncio
 # GUILD_ID =  replace with your guild id
 # MY_GUILD = discord.Object(id=GUILD_ID)   replace with your guild id
 AI_LOADED = False
-# BOT_TOKEN = "replace with the bot token"
+BOT_TOKEN = get_bot_token()
 
 
 class MyClient(discord.Client):
